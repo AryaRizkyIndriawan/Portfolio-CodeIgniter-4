@@ -1,0 +1,67 @@
+html,
+body {
+  overflow: hidden;
+  height: 100%;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+  position: relative;
+}
+
+/* Image container positioning */
+.image-container {
+  position: relative;
+}
+
+/* SVG behind the image */
+.svg-background {
+  position: absolute;
+  top: -50px;
+  left: -80px;
+  z-index: -1;
+  /* Place SVG behind image */
+  width: 150%;
+  /* Make the SVG 20% larger */
+  height: 150%;
+  /* Increase height proportionally */
+  opacity: 0.5;
+  /* Optional: Adjust opacity */
+}
+
+/* Ensure the image is responsive and stays above the SVG */
+.hero img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.custom-title {
+  font-family: sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  color: #14b8a6;
+}
+
+.custom-name {
+  font-family: sans-serif;
+  font-size: 48px;
+  line-height: 48px;
+}
+
+.all-custom-job {
+  font-family: sans-serif;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.all-custom-tagline {
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+}
